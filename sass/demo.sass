@@ -1,0 +1,86 @@
+/* General Demo Style */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300)
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css)
+
+body
+	font-family: 'Open Sans','Arial Narrow', serif
+	font-weight: 400
+	font-size: 15px
+	color: #333
+	-webkit-font-smoothing: antialiased
+	overflow-y: scroll
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+	height: 100%
+
+a
+	color: #00c8a3
+	text-decoration: none
+
+.container
+	width: 100%
+	position: relative
+
+.clearfix
+	clear: both
+	padding: 0
+	height: 0
+	margin: 0
+
+.main
+	width: 90%
+	margin: 0 auto
+	position: relative
+
+.container header
+	margin: 10px 0 30px
+	padding: 20px 10px 10px 10px
+	position: relative
+	display: block
+	text-align: center
+
+	h1
+		font-size: 3em
+		margin: 0
+		position: relative
+		font-weight: 300
+		color: #666
+	h2
+		font-size: 1.2em
+		font-weight: 300
+		margin: 0
+		padding: 15px 0 5px 0
+		color: #888
+		font-style: italic
+
+/* TopBar */
+
+.bar-top
+	margin: 0
+	background:	white
+	z-index: 9999
+	position: relative
+	font-family: 'Open Sans','Arial Narrow', serif
+	box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2)
+
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+		line-height: 2em
+
+		li
+			display: inline-block
+			float: right
+
+			&:first-child
+				float: left
+
+			a
+				padding: 6px 12px
+
+				&:hover
+					background: #535353
+					color: white

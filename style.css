@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+body {
+  font-family: "Open Sans", "Arial Narrow", serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+a {
+  color: #00c8a3;
+  text-decoration: none; }
+
+.container {
+  width: 100%;
+  position: relative; }
+
+.clearfix {
+  clear: both;
+  padding: 0;
+  height: 0;
+  margin: 0; }
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  position: relative; }
+
+.container header {
+  margin: 10px 0 30px;
+  padding: 20px 10px 10px 10px;
+  position: relative;
+  display: block;
+  text-align: center; }
+  .container header h1 {
+    font-size: 3em;
+    margin: 0;
+    position: relative;
+    font-weight: 300;
+    color: #666; }
+  .container header h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+    padding: 15px 0 5px 0;
+    color: #888;
+    font-style: italic; }
+
+/* TopBar */
+.bar-top {
+  margin: 0;
+  background: white;
+  z-index: 9999;
+  position: relative;
+  font-family: "Open Sans", "Arial Narrow", serif;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2); }
+  .bar-top ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 2em; }
+    .bar-top ul li {
+      display: inline-block;
+      float: right; }
+      .bar-top ul li:first-child {
+        float: left; }
+      .bar-top ul li a {
+        padding: 6px 12px; }
+        .bar-top ul li a:hover {
+          background: #535353;
+          color: white; }
+
+.boxed {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em 0 3em; }
+  .boxed ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+h2 {
+  text-align: center; }
+
+.example1 {
+  position: relative;
+  background: #ecf0f1; }
+  .example1:before, .example1:after {
+    content: "";
+    position: absolute;
+    background: #ecf0f1;
+    top: 0;
+    bottom: 0;
+    width: 9999px; }
+  .example1:before {
+    right: 100%; }
+  .example1:after {
+    left: 100%; }
+
+#tw-widget1 li {
+  background: #fff;
+  max-width: 340px;
+  min-width: 300px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.4);
+  margin: 0 auto; }
+#tw-widget1 a {
+  text-decoration: none; }
+#tw-widget1 .user {
+  background: #FD7A79;
+  padding: 20px 20px 16px;
+  position: relative;
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: 1px solid #fd6160; }
+  #tw-widget1 .user a span {
+    position: absolute;
+    display: block;
+    top: 0;
+    text-align: left; }
+  #tw-widget1 .user a span[data-scribe="element:name"] {
+    position: absolute;
+    top: 21px;
+    left: 55px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold; }
+  #tw-widget1 .user a span[data-scribe="element:screen_name"] {
+    position: absolute;
+    top: 42px;
+    left: 74px;
+    font-size: 14px;
+    color: white; }
+#tw-widget1 .tweet {
+  margin: 0;
+  padding: 20px;
+  color: #4d4d4d;
+  font-weight: bold; }
+  #tw-widget1 .tweet a {
+    color: #4d4d4d;
+    font-weight: bold;
+    text-decoration: none; }
+  #tw-widget1 .tweet a[data-scribe="element:url"] {
+    color: #00ae8e; }
+  #tw-widget1 .tweet a[data-scribe="element:hashtag"] {
+    color: #FD7A79; }
+#tw-widget1 .interact {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: #04C6C4;
+  border-radius: 0px 0px 6px 6px;
+  border-top: 1px solid #03adab; }
+  #tw-widget1 .interact a {
+    padding: 15px 0;
+    text-decoration: none;
+    color: #fff;
+    background: #04C6C4; }
+    #tw-widget1 .interact a:hover {
+      color: #4d4d4d;
+      background: #04bcba; }
+    #tw-widget1 .interact a:active {
+      box-shadow: inset 0px 0px 10px -4px rgba(0, 0, 0, 0.75); }
+    #tw-widget1 .interact a:first-child {
+      border-radius: 0px 0px 0px 6px; }
+    #tw-widget1 .interact a:last-child {
+      border-radius: 0px 0px 6px 0px; }
+  #tw-widget1 .interact .twitter_reply_icon, #tw-widget1 .interact .twitter_fav_icon, #tw-widget1 .interact .twitter_retweet_icon {
+    text-align: center;
+    font-size: 0px;
+    width: calc(100% / 3);
+    display: inline-block; }
+    #tw-widget1 .interact .twitter_reply_icon:before, #tw-widget1 .interact .twitter_fav_icon:before, #tw-widget1 .interact .twitter_retweet_icon:before {
+      font-size: 22px;
+      font-family: "Fontawesome";
+      -webkit-font-smoothing: antialiased;
+      padding-right: 4px; }
+  #tw-widget1 .interact .twitter_reply_icon:before {
+    content: ""; }
+  #tw-widget1 .interact .twitter_retweet_icon:before {
+    content: ""; }
+  #tw-widget1 .interact .twitter_fav_icon:before {
+    content: ""; }
+#tw-widget1 .timePosted {
+  margin: 0 0 10px;
+  padding: 0 20px;
+  font-size: 12px;
+  text-align: right; }
+  #tw-widget1 .timePosted:before {
+    font-family: "Fontawesome";
+    -webkit-font-smoothing: antialiased;
+    content: "";
+    padding-right: 4px; }
+
+.example2 {
+  position: relative;
+  background: #1abc9c;
+  padding: 5em 0; }
+  .example2 h2 {
+    margin: 0 0 1.5em; }
+  .example2:before, .example2:after {
+    content: "";
+    position: absolute;
+    background: #1abc9c;
+    top: 0;
+    bottom: 0;
+    width: 9999px; }
+  .example2:before {
+    right: 100%; }
+  .example2:after {
+    left: 100%; }
+
+#tw-widget2:after {
+  content: "";
+  display: table;
+  clear: both; }
+#tw-widget2 li {
+  width: 80%;
+  margin: 0 auto;
+  float: none; }
+  @media (min-width: 48em) {
+    #tw-widget2 li {
+      width: calc(100% / 3);
+      float: left; } }
+#tw-widget2 a {
+  text-decoration: none; }
+#tw-widget2 .user {
+  padding: 20px 20px 16px;
+  position: relative; }
+  #tw-widget2 .user a span {
+    display: block;
+    text-align: left;
+    color: white;
+    font-weight: bold; }
+  #tw-widget2 .user a img[data-scribe="element:avatar"] {
+    display: none; }
+  #tw-widget2 .user a span[data-scribe="element:name"] {
+    font-size: 20px; }
+  #tw-widget2 .user a span[data-scribe="element:screen_name"] {
+    font-size: 14px;
+    color: black; }
+#tw-widget2 .tweet {
+  margin: 0;
+  padding: 10px 20px;
+  color: white; }
+  #tw-widget2 .tweet a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white; }
+  #tw-widget2 .tweet a[data-scribe="element:url"] {
+    text-decoration: underline; }
+  #tw-widget2 .tweet a[data-scribe="element:hashtag"] {
+    color: #ecf0f1; }
+  #tw-widget2 .tweet img[aria-label^="Emoji"] {
+    max-height: 14px; }
+#tw-widget2 .timePosted {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  text-align: left; }
+  #tw-widget2 .timePosted:before {
+    font-family: "Fontawesome";
+    -webkit-font-smoothing: antialiased;
+    content: "";
+    padding-right: 4px; }
+
+.example3 {
+  position: relative;
+  background: #2c3e50; }
+  .example3:before, .example3:after {
+    content: "";
+    position: absolute;
+    background: #2c3e50;
+    top: 0;
+    bottom: 0;
+    width: 9999px; }
+  .example3:before {
+    right: 100%; }
+  .example3:after {
+    left: 100%; }
+
+/*# sourceMappingURL=style.css.map */
